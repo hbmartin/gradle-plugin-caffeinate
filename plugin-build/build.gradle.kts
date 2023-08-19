@@ -33,6 +33,12 @@ allprojects {
     detekt {
         config = rootProject.files("../config/detekt/detekt.yml")
     }
+
+    dependencies {
+        val detektVersion = rootProject.libs.versions.detekt.get()
+        detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:$detektVersion")
+        detektPlugins("com.github.hbmartin:hbmartin-detekt-rules:0.1.0")
+    }
 }
 
 tasks.withType<Detekt>().configureEach {

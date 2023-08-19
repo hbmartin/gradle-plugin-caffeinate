@@ -1,36 +1,13 @@
-# kotlin-gradle-plugin-template 🐘
+# Caffeinate gradle plugin ☕️🐘
 
-[![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/cortinico/kotlin-gradle-plugin-template/generate) [![Pre Merge Checks](https://github.com/cortinico/kotlin-gradle-plugin-template/workflows/Pre%20Merge%20Checks/badge.svg)](https://github.com/cortinico/kotlin-gradle-plugin-template/actions?query=workflow%3A%22Pre+Merge+Checks%22)  [![License](https://img.shields.io/github/license/cortinico/kotlin-android-template.svg)](LICENSE) ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
+## How to use
 
-A simple Github template that lets you create a **Gradle Plugin** 🐘 project using **100% Kotlin** and be up and running in a **few seconds**.
-
-This template is focused on delivering a project with **static analysis** and **continuous integration** already in place.
-
-## How to use 👣
-
-Just click on [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/cortinico/kotlin-gradle-plugin-template/generate) button to create a new repo starting from this template.
+1. Apply plugin to root project
+2. Either set environment variable `export ORG_GRADLE_PROJECT_caffeinate="true"` or run gradle with the argument `-Pcaffeinate=true`
 
 Once created don't forget to update the:
 - [gradle.properties](plugin-build/gradle.properties)
 - Plugin Usages (search for [com.ncorti.kotlin.gradle.template](https://github.com/cortinico/kotlin-gradle-plugin-template/search?q=com.ncorti.kotlin.gradle.template&unscoped_q=com.ncorti.kotlin.gradle.template) in the repo and replace it with your ID).
-
-## Features 🎨
-
-- **100% Kotlin-only template**.
-- Plugin build setup with **composite build**.
-- 100% Gradle Kotlin DSL setup.
-- Dependency versions managed via Gradle Versions Catalog (`libs.versions.toml`).
-- CI Setup with GitHub Actions.
-- Kotlin Static Analysis via `ktlint` and `detekt`.
-- Publishing-ready to Gradle Portal.
-- Issues Template (bug report + feature request)
-- Pull Request Template.
-
-## Composite Build 📦
-
-This template is using a [Gradle composite build](https://docs.gradle.org/current/userguide/composite_builds.html) to build, test and publish the plugin. This means that you don't need to run Gradle twice to test the changes on your Gradle plugin (no more `publishToMavenLocal` tricks or so).
-
-The included build is inside the [plugin-build](plugin-build) folder.
 
 ### `preMerge` task
 
@@ -62,19 +39,16 @@ The [![Publish Plugin to Portal](https://github.com/cortinico/kotlin-gradle-plug
 
 Please note that you need to configure two secrets: `GRADLE_PUBLISH_KEY` and `GRADLE_PUBLISH_SECRET` with the credetials you can get from your profile on the Gradle Portal.
 
-## 100% Kotlin 🅺
+## Development Environment 🛠
 
-This template is designed to use Kotlin everywhere. The build files are written using [**Gradle Kotlin DSL**](https://docs.gradle.org/current/userguide/kotlin_dsl.html) as well as the [Plugin DSL](https://docs.gradle.org/current/userguide/plugins.html#sec:plugins_block) to setup the build.
-
-Dependencies are centralized inside the [libs.versions.toml](gradle/libs.versions.toml).
-
-Moreover, a minimalistic Gradle Plugin is already provided in Kotlin to let you easily start developing your own around it.
-
-## Static Analysis 🔍
-
-This template is using [**ktlint**](https://github.com/pinterest/ktlint) with the [ktlint-gradle](https://github.com/jlleitschuh/ktlint-gradle) plugin to format your code. To reformat all the source code as well as the buildscript you can run the `ktlintFormat` gradle task.
-
-This template is also using [**detekt**](https://github.com/arturbosch/detekt) to analyze the source code, with the configuration that is stored in the [detekt.yml](config/detekt/detekt.yml) file (the file has been generated with the `detektGenerateConfig` task).
+- Based on [kotlin-gradle-plugin-template](https://github.com/cortinico/kotlin-gradle-plugin-template)
+- 100% Kotlin including Gradle DSL.
+- Plugin build setup with **composite build**.
+- Dependency versions managed via Gradle Versions Catalog (`libs.versions.toml`).
+- CI Setup with GitHub Actions.
+- Kotlin Static Analysis via `ktlint` and `detekt`.
+- This is using a [Gradle composite build](https://docs.gradle.org/current/userguide/composite_builds.html) to build, test and publish the plugin.
+-
 
 ## CI ⚙️
 
@@ -87,9 +61,8 @@ There are currently the following workflows available:
 
 ## Contributing 🤝
 
-Feel free to open a issue or submit a pull request for any bugs/improvements.
+Feel free to open an issue or submit a pull request for any bugs/improvements.
 
 ## License 📄
 
 This template is licensed under the MIT License - see the [License](License) file for details.
-Please note that the generated template is offering to start with a MIT license but you can change it to whatever you wish, as long as you attribute under the MIT terms that you're using the template.

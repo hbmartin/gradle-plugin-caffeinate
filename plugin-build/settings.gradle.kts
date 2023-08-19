@@ -9,6 +9,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io")
     }
 
     versionCatalogs {
@@ -30,7 +31,5 @@ gradleEnterprise {
         publishOnFailure()
     }
 }
-
-rootProject.name = ("com.ncorti.kotlin.gradle.template")
 
 include(":plugin")
