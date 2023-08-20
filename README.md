@@ -1,16 +1,19 @@
 # Caffeinate gradle plugin ☕️🐘
 
-## How to use
+## How to Use 🎉
 
-1. Apply plugin to root project. Ensure you have `gradlePluginPortal()` in your `repositories` block. Choose 1 of the 3 options (apply to root project):
+### Install
+
+Apply plugin to root project. Ensure you have `gradlePluginPortal()` in your `repositories` block.
+Choose 1 of the 3 options (apply to root project):
 
 Version catalog:
 
 ```toml
 [versions]
 caffeinate = "0.0.1"
-[caffeinate]
-detekt = { id = "me.haroldmartin.gradle.caffeinate", version.ref = "caffeinate" }
+[plugins]
+caffeinate = { id = "me.haroldmartin.gradle.caffeinate", version.ref = "caffeinate" }
 ```
 
 ```kotlin
@@ -35,7 +38,9 @@ plugins {
 }
 ```
 
-2. Either set environment variable `export ORG_GRADLE_PROJECT_caffeinate="true"` or run gradle with the argument `-Pcaffeinate=true`
+### Activate
+
+Either set environment variable `export ORG_GRADLE_PROJECT_caffeinate="true"` or run gradle with the argument `-Pcaffeinate=true`
 
 ## Development Environment 🛠
 
@@ -48,11 +53,11 @@ plugins {
 - This is using GitHub action to build, test and publish the plugin.
 - `preMerge` task to run all the checks before pushing.
 
-## Contributing 🤝
+### Contributing 🤝
 
 * [PRs](https://github.com/hbmartin/gradle-plugin-caffeinate/pulls) and [bug reports or feature requests](https://github.com/hbmartin/gradle-plugin-caffeinate/issues) are all welcome!
 * Treat other people with helpfulness, gratitude, and consideration! See the [JetBrains CoC](https://confluence.jetbrains.com/display/ALL/JetBrains+Open+Source+and+Community+Code+of+Conduct)
 
-## License 📄
+### License 📄
 
 This template is licensed under the MIT License - see the [License](License) file for details.
