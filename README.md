@@ -10,10 +10,12 @@
 
 ### Install
 
-Apply plugin to root project. Ensure you have `gradlePluginPortal()` in your `repositories` block.
-Choose 1 of the 3 options (apply to root project):
+- Apply plugin to root project. Ensure you have `gradlePluginPortal()` in your `repositories` block.
+- Your project must be built with a minimum of Java 1.9
+- Be sure to activate the plugin as described below.
+- Choose 1 of the 3 options (apply to root project):
 
-Version catalog:
+**Version catalog:**
 
 ```toml
 [versions]
@@ -28,7 +30,7 @@ plugins {
 }
 ```
 
-Kotlin:
+**Kotlin:**
 
 ```kotlin
 plugins {
@@ -36,7 +38,7 @@ plugins {
 }
 ```
 
-Groovy:
+**Groovy:**
 
 ```groovy
 plugins {
