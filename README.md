@@ -1,5 +1,11 @@
 # Caffeinate gradle plugin ☕️🐘
 
+![Gradle Plugin Portal](https://img.shields.io/gradle-plugin-portal/v/me.haroldmartin.gradle.caffeinate)
+[![Pre Merge Checks](https://github.com/hbmartin/gradle-plugin-caffeinate/actions/workflows/pre-merge.yaml/badge.svg)](https://github.com/hbmartin/gradle-plugin-caffeinate/actions/workflows/pre-merge.yaml)
+[![CodeFactor](https://www.codefactor.io/repository/github/hbmartin/gradle-plugin-caffeinate/badge)](https://www.codefactor.io/repository/github/hbmartin/gradle-plugin-caffeinate)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=hbmartin_gradle-plugin-caffeinate&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=hbmartin_gradle-plugin-caffeinate)
+
+
 ## How to Use 🎉
 
 ### Install
