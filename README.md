@@ -19,7 +19,7 @@
 
 ```toml
 [versions]
-caffeinate = "0.0.1"
+caffeinate = "0.0.2"
 [plugins]
 caffeinate = { id = "me.haroldmartin.gradle.caffeinate", version.ref = "caffeinate" }
 ```
@@ -34,7 +34,7 @@ plugins {
 
 ```kotlin
 plugins {
-  id("me.haroldmartin.gradle.caffeinate") version "0.0.1"
+  id("me.haroldmartin.gradle.caffeinate") version "0.0.2"
 }
 ```
 
@@ -42,7 +42,7 @@ plugins {
 
 ```groovy
 plugins {
-  id "me.haroldmartin.gradle.caffeinate" version "0.0.1"
+  id "me.haroldmartin.gradle.caffeinate" version "0.0.2"
 }
 ```
 
