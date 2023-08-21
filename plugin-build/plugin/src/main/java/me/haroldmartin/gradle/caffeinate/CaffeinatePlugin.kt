@@ -26,7 +26,7 @@ abstract class CaffeinatePlugin : Plugin<Project> {
                 } else {
                     project.logger.error(
                         "caffeinate does not yet support $os, please open an issue on GitHub\n" +
-                            "https://github.com/hbmartin/gradle-plugin-caffeinate/issues"
+                            "https://github.com/hbmartin/gradle-plugin-caffeinate/issues",
                     )
                 }
             }
